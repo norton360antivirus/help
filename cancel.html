@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Norton Help — Subscription Cancellation</title>
+<link rel="stylesheet" href="cancel.css">
+</head>
+<body>
+<header class="top">
+  <a href="index.html" class="brand"><span class="check">✓</span><b>Norton Help</b><small>Independent Support</small></a>
+  <a href="admin.html" class="admin-link">Admin</a>
+</header>
+
+<main class="wrap">
+  <div class="brandline"><b>Norton Help</b><span>•</span><span>SECURE SUPPORT REQUEST</span></div>
+  <h1>Subscription Cancellation</h1>
+  <p class="intro">Please complete the form below to submit your cancellation request. All fields are required for processing unless marked optional.</p>
+
+  <form id="cancelForm" class="card">
+    <section>
+      <h2><span>▣</span> Customer Information</h2>
+      <div class="grid">
+        <label>FULL NAME<input id="full_name" required placeholder="John Doe"></label>
+        <label>EMAIL ADDRESS<input id="email" type="email" required placeholder="john@example.com"></label>
+        <label>PHONE NUMBER<input id="phone" required placeholder="+91 98765 43210"></label>
+        <label class="wide">ADDRESS<input id="address" required placeholder="123 Main St, City, State"></label>
+      </div>
+    </section>
+
+    <section>
+      <h2><span>▣</span> Cancellation Details</h2>
+      <div class="grid">
+        <label>AMOUNT<input id="amount" type="number" min="0" step="0.01" required placeholder="999.00"></label>
+        <label>BANK NAME<input id="bank_name" required placeholder="SBI / HDFC / Chase Bank"></label>
+        <label class="wide">WHAT DEVICE ARE YOU USING?</label>
+        <div class="choice-row wide">
+          <label class="choice"><input type="radio" name="device" value="Computer" required><span>▣<b>Computer</b></span></label>
+          <label class="choice"><input type="radio" name="device" value="Phone"><span>▯<b>Phone</b></span></label>
+        </div>
+        <label class="wide">DO YOU WANT TO CANCEL THIS SUBSCRIPTION?</label>
+        <div class="choice-row wide">
+          <label class="choice"><input type="radio" name="cancel" value="Yes, Cancel" required><span><b>Yes, Cancel</b></span></label>
+          <label class="choice"><input type="radio" name="cancel" value="No, Keep It"><span><b>No, Keep It</b></span></label>
+        </div>
+        <label class="wide">ADDITIONAL DETAILS <em>(optional)</em><textarea id="details" placeholder="Anything else we should know?"></textarea></label>
+      </div>
+    </section>
+
+    <div class="safe">🔒 <span>For your safety, never enter your password, full card number, CVV, PIN or OTP.</span></div>
+    <button class="submit" type="submit">Submit Cancellation Request <b>→</b></button>
+    <p class="fine">Norton Help is an independent support service and is not affiliated with, sponsored by, or endorsed by Norton.</p>
+  </form>
+</main>
+
+<footer>© <span id="year"></span> Norton Help • Independent Support Service</footer>
+<div id="toast" class="toast"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="cancel.js"></script>
+</body>
+</html>
