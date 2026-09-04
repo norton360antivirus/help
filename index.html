@@ -1,62 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Norton Help — Subscription Cancellation</title>
-<link rel="stylesheet" href="cancel.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Norton Help - independent technical support and assistance for digital security, setup and troubleshooting.">
+  <title>Norton Help — Independent Support & Assistance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top">
-  <a href="index.html" class="brand"><span class="check">✓</span><b>Norton Help</b><small>Independent Support</small></a>
-  <a href="admin.html" class="admin-link">Admin</a>
-</header>
+  <div class="notice">Independent support service. <strong>Not affiliated with or endorsed by Norton.</strong></div>
 
-<main class="wrap">
-  <div class="brandline"><b>Norton Help</b><span>•</span><span>SECURE SUPPORT REQUEST</span></div>
-  <h1>Subscription Cancellation</h1>
-  <p class="intro">Please complete the form below to submit your cancellation request. All fields are required for processing unless marked optional.</p>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Norton Help home">
+      <span class="brand-mark">✓</span>
+      <span><strong>Norton Help</strong><small>Independent Support & Assistance</small></span>
+    </a>
 
-  <form id="cancelForm" class="card">
-    <section>
-      <h2><span>▣</span> Customer Information</h2>
-      <div class="grid">
-        <label>FULL NAME<input id="full_name" required placeholder="John Doe"></label>
-        <label>EMAIL ADDRESS<input id="email" type="email" required placeholder="john@example.com"></label>
-        <label>PHONE NUMBER<input id="phone" required placeholder="+91 98765 43210"></label>
-        <label class="wide">ADDRESS<input id="address" required placeholder="123 Main St, City, State"></label>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav" id="nav">
+      <a href="#services">Services</a>
+      <a href="#features">Features</a>
+      <a href="#plans">Plans & Pricing</a>
+      <a href="#support">Support</a>
+      <a href="#faq">Resources</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <a class="signin" href="#support">Sign In</a>
+      <a class="yellow-btn small" href="#support">Get Help</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="rating">
+          <b>Excellent</b>
+          <span class="stars">★ ★ ★ ★ ★</span>
+          <b>4.8 out of 5</b>
+          <span>independent customer feedback</span>
+        </div>
+
+        <h1>Your digital life,<br><span>our priority.</span></h1>
+        <p class="lead">Get easy-to-understand help with security, device setup, online threats, account issues and everyday technology problems.</p>
+
+        <div class="hero-buttons">
+          <a class="yellow-btn" href="#plans">View support plans <span>→</span></a>
+          <a class="outline-btn" href="#support">♧ &nbsp; Get Support</a>
+        </div>
+
+        <div class="checks">
+          <span>✓ Easy setup</span>
+          <span>✓ Friendly assistance</span>
+          <span>✓ Remote support options</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=85" alt="Customer receiving technology support">
+        <div class="image-caption">
+          <strong>Safer devices.<br>Happier tomorrows.</strong>
+          <span>Independent technical assistance</span>
+        </div>
       </div>
     </section>
 
-    <section>
-      <h2><span>▣</span> Cancellation Details</h2>
-      <div class="grid">
-        <label>AMOUNT<input id="amount" type="number" min="0" step="0.01" required placeholder="999.00"></label>
-        <label>BANK NAME<input id="bank_name" required placeholder="SBI / HDFC / Chase Bank"></label>
-        <label class="wide">WHAT DEVICE ARE YOU USING?</label>
-        <div class="choice-row wide">
-          <label class="choice"><input type="radio" name="device" value="Computer" required><span>▣<b>Computer</b></span></label>
-          <label class="choice"><input type="radio" name="device" value="Phone"><span>▯<b>Phone</b></span></label>
-        </div>
-        <label class="wide">DO YOU WANT TO CANCEL THIS SUBSCRIPTION?</label>
-        <div class="choice-row wide">
-          <label class="choice"><input type="radio" name="cancel" value="Yes, Cancel" required><span><b>Yes, Cancel</b></span></label>
-          <label class="choice"><input type="radio" name="cancel" value="No, Keep It"><span><b>No, Keep It</b></span></label>
-        </div>
-        <label class="wide">ADDITIONAL DETAILS <em>(optional)</em><textarea id="details" placeholder="Anything else we should know?"></textarea></label>
+    <section class="feature-strip" id="features">
+      <div><i>◈</i><strong>Security Help</strong><small>Threat & malware guidance</small></div>
+      <div><i>⌁</i><strong>Secure VPN Help</strong><small>Privacy & connection setup</small></div>
+      <div><i>▣</i><strong>Password Help</strong><small>Account access assistance</small></div>
+      <div><i>☁</i><strong>Backup Help</strong><small>Protect important files</small></div>
+      <div><i>◎</i><strong>Online Safety</strong><small>Scam & phishing guidance</small></div>
+      <div><i>▤</i><strong>Device Support</strong><small>PC, Mac & mobile help</small></div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <span class="eyebrow">HOW WE HELP</span>
+        <h2>Support for the problems that matter.</h2>
+        <p>Simple answers, practical steps and human assistance when technology gets frustrating.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card"><span class="service-icon">🛡</span><h3>Security & Antivirus</h3><p>Help with security software setup, scans, updates and common protection issues.</p><a href="#support">Get help →</a></article>
+        <article class="service-card"><span class="service-icon">💻</span><h3>Computer Support</h3><p>Troubleshoot everyday PC and Mac problems, installations and performance issues.</p><a href="#support">Get help →</a></article>
+        <article class="service-card"><span class="service-icon">📶</span><h3>Wi‑Fi & Network</h3><p>Get guidance for connectivity, router setup, slow internet and device connections.</p><a href="#support">Get help →</a></article>
+        <article class="service-card"><span class="service-icon">⚙</span><h3>Device Setup</h3><p>Step-by-step assistance for new computers, phones, apps, accounts and settings.</p><a href="#support">Get help →</a></article>
       </div>
     </section>
 
-    <div class="safe">🔒 <span>For your safety, never enter your password, full card number, CVV, PIN or OTP.</span></div>
-    <button class="submit" type="submit">Submit Cancellation Request <b>→</b></button>
-    <p class="fine">Norton Help is an independent support service and is not affiliated with, sponsored by, or endorsed by Norton.</p>
-  </form>
-</main>
+    <section class="plans section" id="plans">
+      <div class="section-heading center">
+        <span class="eyebrow">SUPPORT PLANS</span>
+        <h2>Choose the right help for you.</h2>
+        <p>Flexible assistance for one problem or ongoing technology support.</p>
+        <select id="currency" aria-label="Currency">
+          <option value="INR">INR (₹)</option>
+          <option value="USD">USD ($)</option>
+        </select>
+      </div>
 
-<footer>© <span id="year"></span> Norton Help • Independent Support Service</footer>
-<div id="toast" class="toast"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="config.js"></script>
-<script src="cancel.js"></script>
+      <div class="plan-grid">
+        <article class="plan-card">
+          <div class="plan-top"></div>
+          <h3>Quick Fix</h3><p>For one simple technology problem.</p>
+          <div class="price"><span class="currency">₹</span><span data-inr="499" data-usd="7">499</span> <small>/ session</small></div>
+          <ul><li>One support issue</li><li>Step-by-step guidance</li><li>Basic security check</li></ul>
+          <a class="plan-btn" href="#support" data-plan="Quick Fix">Get Started →</a>
+        </article>
+
+        <article class="plan-card popular">
+          <div class="popular-tag">MOST POPULAR</div>
+          <div class="plan-top"></div>
+          <h3>Complete Support</h3><p>Help with multiple everyday issues.</p>
+          <div class="price"><span class="currency">₹</span><span data-inr="999" data-usd="12">999</span> <small>/ session</small></div>
+          <ul><li>Multiple support issues</li><li>Security & device guidance</li><li>Remote-support assistance</li></ul>
+          <a class="plan-btn" href="#support" data-plan="Complete Support">Get Started →</a>
+        </article>
+
+        <article class="plan-card">
+          <div class="plan-top"></div>
+          <h3>Family Care</h3><p>Ongoing help for your household.</p>
+          <div class="price"><span class="currency">₹</span><span data-inr="1999" data-usd="24">1999</span> <small>/ month</small></div>
+          <ul><li>Priority assistance</li><li>Up to 5 devices</li><li>Security & setup guidance</li></ul>
+          <a class="plan-btn" href="#support" data-plan="Family Care">Get Started →</a>
+        </article>
+      </div>
+      <p class="pricing-note">Prices shown are illustrative support-service pricing and are not Norton product prices.</p>
+    </section>
+
+    <section class="trust section">
+      <div class="trust-score">
+        <strong>Excellent</strong><span class="big-stars">★★★★★</span><b>4.8 / 5</b><small>Based on independent customer feedback</small>
+      </div>
+      <div class="quote"><span>★★★★★</span><p>“Easy to understand and very helpful. My computer was set up without the usual headache.”</p><b>— Rahul S.</b></div>
+      <div class="quote"><span>★★★★★</span><p>“Clear instructions and friendly support. I finally understood what was wrong.”</p><b>— Priya M.</b></div>
+      <div class="quote"><span>★★★★★</span><p>“Quick help when I needed it. The setup guidance was excellent.”</p><b>— Amit K.</b></div>
+    </section>
+
+    <section class="support section" id="support">
+      <div class="support-copy">
+        <span class="eyebrow">NEED A HAND?</span>
+        <h2>Let's solve your tech problem.</h2>
+        <p>Tell us what is going wrong and we'll help you understand the next step.</p>
+        <div class="support-options">
+          <div><b>☎</b><span><strong>Talk to Support</strong><small>Speak with an independent support representative.</small></span></div>
+          <div><b>▣</b><span><strong>Request Assistance</strong><small>Send your issue and preferred contact details.</small></span></div>
+          <div><b>⚙</b><span><strong>Setup Help</strong><small>Get guided help for devices and security tools.</small></span></div>
+        </div>
+      </div>
+
+      <form class="support-form" id="supportForm">
+        <h3>Request Support</h3>
+        <label>Name<input type="text" id="name" required placeholder="Your name"></label>
+        <label>Email<input type="email" id="email" required placeholder="you@example.com"></label>
+        <label>What do you need help with?<textarea id="message" required placeholder="Tell us briefly about the problem..."></textarea></label>
+        <button class="yellow-btn" type="submit">Send Request →</button>
+        <small>By submitting, you agree that this is an independent support service and not an official Norton channel.</small>
+      </form>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="section-heading center"><span class="eyebrow">FAQ</span><h2>Questions, answered.</h2></div>
+      <div class="faq-list">
+        <button class="faq-item"><span>Is Norton Help an official Norton website?</span><b>+</b><p>No. Norton Help is an independent support and assistance service and is not affiliated with, endorsed by, or operated by Norton.</p></button>
+        <button class="faq-item"><span>Can you help me install security software?</span><b>+</b><p>Yes. We can provide step-by-step guidance for installation, account access, updates and common setup issues.</p></button>
+        <button class="faq-item"><span>Can you help with a slow computer or Wi‑Fi?</span><b>+</b><p>Yes. We can guide you through common troubleshooting steps for computers, networks and connected devices.</p></button>
+        <button class="faq-item"><span>Do you sell Norton subscriptions?</span><b>+</b><p>This demo site is for independent support services. It does not represent Norton product sales or official Norton pricing.</p></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-brand"><span class="brand-mark">✓</span><strong>Norton Help</strong><p>Independent Support & Assistance</p></div>
+    <div><h4>Support</h4><a href="#services">Services</a><a href="#support">Contact</a><a href="#faq">FAQ</a></div>
+    <div><h4>Resources</h4><a href="#features">Security Help</a><a href="#plans">Plans</a><a href="#top">Back to top</a></div>
+    <div class="footer-disclaimer"><h4>Important</h4><p>Norton Help is an independent service. Norton and related marks are trademarks of their respective owners. This website is not affiliated with or endorsed by Norton.</p></div>
+  </footer>
+
+  <div class="search-box" id="searchBox">
+    <input id="searchInput" type="search" placeholder="Search this page..." aria-label="Search">
+    <button id="closeSearch">×</button>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
 </body>
 </html>
